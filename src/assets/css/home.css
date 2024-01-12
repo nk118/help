@@ -1,0 +1,498 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: inherit;
+  font-family: sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  list-style: none;
+}
+
+.navbar-nav .nav-item .nav-link {
+  white-space: nowrap;
+}
+.navbar-brand img{
+  margin-left: 10px;
+}
+#navbar-nav  li {
+  padding: 0 1em;
+  border-right: 1px solid black;
+  position: relative;
+  transition: color 0.3s ease; /* 添加文字颜色的过渡效果 */
+}
+
+#navbar-nav li:hover {
+  color: #007bff; /* 悬停时改变文字颜色 */
+  border-right-color: transparent; /* 悬停时隐藏右边框 */
+}
+
+#navbar-nav li::after {
+  content: ''; /* 添加内容，必须要有内容才能显示伪元素 */
+  display: block;
+  width: 0; /* 初始宽度为0，不显示下划线 */
+  height: 2px; /* 下划线高度 */
+  background-color: #007bff; /* 下划线颜色 */
+  position: absolute;
+  bottom: 0; /* 使下划线在链接底部 */
+  left: 0;
+  transition: width 0.3s ease; /* 添加下划线宽度的过渡效果 */
+}
+
+#navbar-nav li:hover::after {
+
+  width: 100%; /* 悬停时将宽度设置为100%，显示下划线 */
+}
+
+.banner1{
+  width: 100%;
+}
+select{
+  font-size: 15px;
+  border: none;
+
+}
+.tel{
+  padding-left: 1em;
+ width: 85%;
+}
+.member{
+padding: 0 1em;
+ width: 100%;
+
+}.shop{
+ width: 100%;
+}
+
+/* main */
+
+
+
+.mainicon1,
+.mainicon2,
+.mainicon3,
+.mainicon4 {
+  position: absolute;
+  top: 50%; /* 调整 mainicon 在 mainbg 上方的位置 */
+  left: 30%; /* 调整 mainicon 在 mainbg 左边的位置 */
+  transform: translate(-50%, -50%); /* 通过 translate 属性使其居中 */
+  width: 100px; /* 设置 mainicon 宽度 */
+  height: auto; /* 保持 mainicon 纵横比 */
+  z-index: 1; /* 将 mainicon 放置在堆叠顺序的顶部 */
+  max-width: 100px; /* 设置 mainicon 最大宽度为容器的 50% */
+}
+
+.img-caption {
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  left: 60%;
+  transform: translateX(-50%);
+  text-align: center;
+  padding-left: 20px;
+  color: white;
+  font-size: 20px;
+  font-weight: 900;
+}
+.img-caption1{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  transform: translateX(-50%);
+  text-align: left;
+  padding-left: 20px;
+  color: white;
+  font-size: 15px;
+}
+.img-caption2{
+  width: 100%;
+  position: absolute;
+  top: 35%;
+  left: 57%;
+  transform: translateX(-50%);
+  text-align: center;
+  padding-left: 20px;
+  color: white;
+  font-size: 25px;
+  font-weight: 900;
+}
+.img-caption3{
+  width: 100%;
+  position: absolute;
+  top: 55%;
+  left: 60%;
+  transform: translateX(-50%);
+  text-align: center;
+  padding-left: 20px;
+  color: white;
+  font-size: 15px;
+}
+.img-caption4{
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  left: 92%;
+  transform: translateX(-50%);
+  text-align: left;
+  padding-left: 20px;
+  color: white;
+  font-size: 25px;
+}
+.img-caption5{
+  width: 100%;
+  position: absolute;
+  top: 55%;
+  left: 60%;
+  transform: translateX(-50%);
+  text-align: center;
+  padding-left: 20px;
+  color: white;
+  font-size: 15px;
+}
+.img-caption6{
+  width: 100%;
+  position: absolute;
+  top: 35%;
+  left: 55%;
+  transform: translateX(-50%);
+  text-align: center;
+  padding-left: 20px;
+  color: white;
+  font-size: 25px;
+}
+.img-caption7{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  transform: translateX(-50%);
+  text-align: left;
+  padding-left: 20px;
+  color: white;
+  font-size: 15px;
+}
+.container-fluid{
+  margin: 30px auto;
+}
+
+.img-container a:hover {
+  transform: scale(1.1); /* 悬停时放大1.1倍 */
+  transition: transform 0.3s ease; /* 添加过渡效果 */
+}
+/* 最新消息 */
+.maintitle2{
+  position: relative;
+  left: 3%;
+}
+.news{
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.card-body span{
+ color: #80B0CE;
+}
+.card-body h1{
+  position: relative;
+  right: 7px;
+  font-size: 20px;
+}
+.card-body p{
+  font-size: 15px;
+}
+/* map */
+.map {
+  height: 400px; /* 调整为所需的高度 */
+  width: 100%;
+
+}
+.map img{
+  width: 100%;
+  height: 400px;
+  padding: 2em;
+}
+/* footer */
+.footer{
+	width:100%;
+	border-top:5px solid #3D7784;
+	background:#468A99;
+	padding:0 0 20px 0;
+	box-sizing:border-box;
+}
+.footer-bg{
+	background:#3D7784;
+}
+
+ul.footer-nav {
+	display: table;
+	margin: 0 auto;
+	width:85%;
+	padding:10px 0;
+	box-sizing:border-box;
+}
+.footer-nav li{
+	font-size:15px;
+	text-align:center;
+	float:left;
+	width:12.3%;
+	border-right:1px solid #69cfe5;
+}
+.footer-nav li:nth-child(8){
+	border-right:0px;
+}
+.footer-nav li a{
+	display:block;
+	color:#69cfe5;
+}
+.footer-nav li a:hover{
+	text-decoration:underline;
+}
+.footer-box{
+	width:50%;
+	float:left;
+	padding:30px 0 10px 0;
+	box-sizing:border-box;
+}
+.footer-box li{
+	width:25%;
+	float:left;
+	font-size:14px;
+	height:55px;
+	padding:0 5px 0 0;
+	box-sizing:border-box;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-box li a{
+	display:block;
+	color:#69cfe5;
+	box-sizing:border-box;
+}
+.footer-box a:hover{
+	text-decoration:underline;
+}
+.footer-box p{
+	font-size:14px;
+	color:#69cfe5;
+	letter-spacing:1px;
+	line-height:20px;
+}
+.footer-box p span{
+	color:#58adc0;
+}
+.footer-boxa{
+  position: relative;
+  right: 10%;
+}
+.copyright{
+	font-size:12px;
+	color: #69cfe5;
+	text-align:center;
+}
+.visitCount{
+  color: #69cfe5;
+}
+ .gototop{
+	width:60px;
+	height:60px;
+	position:fixed;
+	right:50px;
+	bottom:40px;
+}
+/* .sidemenu{
+	width:80px;
+	height:auto;
+	background:#5eb255;
+	position:fixed;
+	right:0;
+	top:35%;
+	border-radius:10px;
+}
+.sidemenu li{
+	padding:10px 5px;
+	box-sizing:border-box;
+	text-align:center;
+	font-size:13px;
+}
+.sidemenu li a{
+	display:block;
+	color:#fff;
+}
+.sidemenu li a:hover{
+	text-decoration:underline;
+} */ 
+
+@media only screen and (max-width:640px) {
+  .img-caption{
+    font-size: 17px;
+    top: 35%;
+    left: 52%;
+    padding-left: 0;
+  }
+  .img-caption2{
+    top: 40%;
+    left: 50%;
+  }
+  .img-caption3{
+    top: 50%;
+    left: 50%;
+  }
+  .img-caption4{
+    top: 45%;
+  }
+  .img-caption5{
+    top: 55%;
+    left: 53%;
+  }
+  .img-caption6{
+    top: 40%;
+    left: 50%;
+  }
+  .img-caption7{
+    top: 50%;
+    left: 92%;
+  }
+  .footer-box a{
+    position: relative;
+    left: 0%;
+    }
+    .footer-boxa{
+      position: relative;
+      right: 20%;
+    }
+    .footer-nav li {
+      width: 49%;
+      
+  }
+  .footer-nav li:nth-child(even){
+    border-right:0px;
+  }
+  .navbar-nav img{
+    display: none;
+  }
+}
+
+@media (max-width: 1024px){
+	ul.footer-nav {
+		width:100%;
+	}
+	.footer-nav li{
+		width:24%;
+		margin:0 0 5px 0;
+	}
+	.footer-nav li:nth-child(4){
+		border-right:0px;
+	}
+  .footer-box{
+		width:100%;
+		float:none;
+		padding:15px 0;
+		overflow:hidden;
+	}
+	.footer-box li{
+		width:50%;
+		float:left;
+	}
+  .footerboxa{
+     left: -5em;
+  }
+  .img-caption{
+    font-size: 17px;
+    top: 33%;
+    left: 54%;
+  }
+  .img-caption2{
+    font-size: 17px;
+    top: 40%;
+    left: 53%;
+  }
+  .img-caption3{
+    top: 50%;
+    left: 50%;
+  }
+  .img-caption4{
+    font-size: 17px;
+    top: 43%;
+  }
+  .img-caption5{
+    left: 50%;
+  }
+  .img-caption6{
+    font-size: 17px;
+    top: 40%;
+    left: 50%;
+  }
+  .img-caption7{
+    font-size: 15px;
+    top: 50%;
+    left: 88%;
+  }
+  }
+  @media only screen and (max-width:1200px){
+  
+  .img-caption{
+    font-size: 13px;
+    padding-left: 3em;
+  }
+  .img-caption1{
+    font-size: 12px;
+    padding-left: 2em;
+  }
+  .img-caption2{
+    font-size: 15px;
+    padding-left: 2em;
+  }
+  .img-caption3{
+    font-size: 13px;
+    padding-left: 5em;
+  }
+  .img-caption4{
+    font-size: 15px;
+    padding-left: 1.5em;
+  }
+  .img-caption5{
+    font-size: 13px;
+    padding-left: 5em;
+  }
+  .img-caption6{
+    font-size: 15px;
+    padding-left: 3em;
+  }
+  .img-caption7{
+    font-size: 13px;
+    padding-left: 2em;
+  }
+  .vertical-text li {
+    writing-mode: vertical-rl; /* 設定文字垂直排列 */
+    text-orientation: mixed;
+    transform: scale(-1);
+  }
+  .footer-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between; /* 將元素均勻分佈在父容器中 */
+  }
+
+  .footer-nav li {
+    margin-right: 10px;
+  }
+
+  .footer-nav a {
+    
+    text-decoration: none;
+    color: #333;
+    display: block;
+    writing-mode: horizontal-tb; /* 調整為橫向排列 */
+    text-orientation: upright;
+  }
+  .footer-box a{
+    position: relative;
+    right: 30%;
+  }
+}
+
