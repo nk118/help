@@ -182,25 +182,11 @@ padding: 0 1em;
   transition: transform 0.3s ease; /* 添加过渡效果 */
 }
 /* 最新消息 */
-.maintitle2{
-  position: relative;
-  left: 3%;
-}
-.news{
-  margin-left: 30px;
-  margin-right: 30px;
-}
+
 .card-body span{
  color: #80B0CE;
 }
-.card-body h1{
-  position: relative;
-  right: 7px;
-  font-size: 20px;
-}
-.card-body p{
-  font-size: 15px;
-}
+
 /* map */
 .map {
   height: 400px; /* 调整为所需的高度 */
