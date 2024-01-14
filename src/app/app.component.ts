@@ -4,6 +4,7 @@ import { RouterOutlet } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarouselService } from './carousel.service';
 import { HttpClient } from '@angular/common/http';
+declare var $: any;
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -17,7 +18,14 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.fetchBannerImages();
+
+    $(document).ready(function () {
+      $('.navbar-toggler.snow').on('click', function () {
+        $('.navbar-collapse').toggleClass('show');
+      });
+    });
   }
+
 
   fetchBannerImages() {
     const apiUrl = 'http://localhost:127.0.0.1/API/Banner.aspx';
@@ -33,3 +41,4 @@ export class AppComponent implements OnInit {
     );
   }
 }
+
