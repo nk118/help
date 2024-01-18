@@ -1,0 +1,8 @@
+{
+  "peopleCount": [
+    {
+      "now": 100,
+      "history": 10000
+    }
+  ]
+}

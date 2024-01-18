@@ -1,0 +1,114 @@
+.container {
+    width: 100%; /* 或者使用其他你想要的寬度值 */
+  }
+.about h1{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    font-size: 50px; 
+    color: white; 
+    transform: translate(-50%,0);
+    font-weight: 900;
+}
+.about p{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    font-size: 25px;
+    color: white;
+    transform: translate(-50%,0);
+}
+.about-text{
+    
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.about-text p{
+   text-wrap: nowrap;
+    font-size: 22px;
+}
+.about-text h1{
+    font-size: 100px;
+    color: #80B0CE;
+    font-weight: 900;
+    padding: 0 10px;
+}
+.about-text ul{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-text ul li{
+    display: flex;
+    align-items: center;
+   justify-content: center;
+    padding: 0 1em;
+   
+    font-weight: 900;
+}
+.container-img .row{
+    padding: 10px 0;
+}
+.title{
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+}
+.title h1{
+    font-weight: 900;
+    text-wrap: nowrap;
+    font-size: 30px;
+}
+.title img{
+    margin-left: 10px;
+ height: 10px;
+}
+@media only screen and (max-width:1024px) {
+    img{
+        margin: 10px 0;
+    }
+    .about{
+        width: 100%;
+    }
+   .about h1{
+    font-size: 20px;
+   }
+   .about p{
+    font-size: 15px;
+   }
+   .about-text p{
+    text-wrap: nowrap;
+    font-size: 18px;
+   }
+   .about-text ul{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.about-text img{
+   display: none;
+}
+   .about-text h1{
+    font-size: 80px;
+    color: #80B0CE;
+    font-weight: 900;
+    padding: 0 10px;
+}
+.about-text ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+}
+.title h1{
+    font-size: 25px;
+}
+.title img{
+    overflow-x: hidden;
+    width: 100%;
+}
+}
