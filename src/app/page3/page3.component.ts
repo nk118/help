@@ -10,6 +10,7 @@ import { HealthPackageService } from '../health-package.service';
 export class Page3Component implements OnInit {
   healthPackages: any[] = [];
   selectedCount: number = 0; // 添加這一行
+
   constructor(private healthPackageService: HealthPackageService) {}
   pupdateSelectedCount(): void {
     // 實現你的邏輯，例如更新 selectedCount
@@ -20,11 +21,11 @@ export class Page3Component implements OnInit {
   ngOnInit(): void {
     this.getHealthPackages();
   }
-
   getHealthPackages(): void {
     this.healthPackageService.getHealthPackages().subscribe((packages) => {
       console.log(packages); // 确保数据被成功获取
       this.healthPackages = packages;
     });
   }
+  
 }

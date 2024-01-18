@@ -3,7 +3,7 @@
     
    </div>
   <nav class="navbar navbar-expand-lg navbar-light bg-light mx-2" >
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="#"routerLink="/home" >
         <img src="assets/img/logo.png" alt="Logo">
     </a>
     <button class="navbar-toggler snow" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -15,10 +15,16 @@
           <a class="nav-link" href="#" >最新消息</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/page1">關於我們</a>
+          <a class="nav-link">關於我們</a>
+          <div class="sub-menu">
+            <ul>
+            <li><a href="" routerLink="/page1">我們的特色</a></li>
+            <li><a href="" routerLink="/page2">我們的團隊</a></li>
+            </ul>
+          </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">健檢項目/價格</a>
+          <a class="nav-link" href="#" routerLink="/page3">健檢項目/價格</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">網路預約</a>

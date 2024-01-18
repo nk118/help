@@ -69,4 +69,24 @@
   }.shop{
    width: 100%;
   }
-  
+  .sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 999;
+  }
+  #navbar-nav .sub-menu li {
+    color: black;
+    text-wrap: nowrap;
+    border-right: none; /* 移除子菜單的右邊框 */
+  }
+  .nav-item:hover .sub-menu {
+    display: block;
+  }
+  #navbar-nav .nav-item li:hover  {
+    color: #007bff; /* 鼠標懸停時改變文字顏色 */
+  }
